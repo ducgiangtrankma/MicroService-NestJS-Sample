@@ -1,0 +1,74 @@
+# ================================
+# Kong Gateway Configuration
+# ================================
+KONG_ADMIN_URL=http://localhost:8001
+KONG_PROXY_URL=http://localhost:8000
+
+# ================================
+# Database Configuration
+# ================================
+# MongoDB
+MONGO_USERNAME=admin
+MONGO_PASSWORD=password123
+MONGO_DATABASE=microservices
+
+# PostgreSQL (Kong)
+POSTGRES_USER=kong
+POSTGRES_PASSWORD=kongpass
+POSTGRES_DB=kong
+
+# Redis
+REDIS_HOST=redis
+REDIS_PORT=6379
+REDIS_PASSWORD=
+
+# ================================
+# RabbitMQ Configuration
+# ================================
+RABBITMQ_URL=amqp://admin:password123@rabbitmq:5672
+RABBITMQ_USER=admin
+RABBITMQ_PASSWORD=password123
+RABBITMQ_NOTIFICATION=notification_queue
+
+# ================================
+# JWT Configuration
+# ================================
+ACCESS_TOKEN_KEY=your-super-secret-access-token-key-256-bit
+REFRESH_TOKEN_KEY=your-super-secret-refresh-token-key-256-bit
+INTERNAL_TOKEN_PUBLIC_KEY=your-internal-token-public-key
+ACCESS_TOKEN_EXPIRES=1h
+REFRESH_TOKEN_EXPIRES=7d
+
+# ================================
+# AWS Configuration (SenderService)
+# ================================
+AWS_ACCESS_KEY_ID=your-aws-access-key-id
+AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
+AWS_REGION=us-east-1
+AWS_BUCKET_NAME=your-s3-bucket-name
+
+# ================================
+# Application Configuration
+# ================================
+NODE_ENV=development
+DEBUG=true
+APP_FALLBACK_LANGUAGE=en
+APP_CORS_ORIGIN=http://localhost:3000,http://localhost:8000
+
+# ================================
+# Monitoring Configuration
+# ================================
+PROMETHEUS_PORT=9090
+GRAFANA_PORT=3000
+GRAFANA_ADMIN_PASSWORD=admin123
+
+# ================================
+# Service Ports
+# ================================
+USER_SERVICE_PORT=3001
+SENDER_SERVICE_PORT=3002
+SOCIAL_SERVICE_PORT=3003
+KONG_PROXY_PORT=8000
+KONG_ADMIN_PORT=8001
+KONG_ADMIN_GUI_PORT=8002
+KONGA_PORT=1337 

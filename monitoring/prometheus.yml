@@ -1,0 +1,50 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  # Kong Gateway metrics
+  - job_name: 'kong'
+    static_configs:
+      - targets: ['kong-gateway:8001']
+    metrics_path: '/metrics'
+    scrape_interval: 5s
+
+  # Microservices metrics
+  - job_name: 'user-service'
+    static_configs:
+      - targets: ['user-service:3001']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+
+  - job_name: 'sender-service'
+    static_configs:
+      - targets: ['sender-service:3002']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+
+  - job_name: 'social-service'
+    static_configs:
+      - targets: ['social-service:3003']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+
+  # Infrastructure monitoring
+  - job_name: 'mongodb'
+    static_configs:
+      - targets: ['mongodb:27017']
+    scrape_interval: 30s
+
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+    scrape_interval: 30s
+
+  - job_name: 'rabbitmq'
+    static_configs:
+      - targets: ['rabbitmq:15692']
+    scrape_interval: 30s 
