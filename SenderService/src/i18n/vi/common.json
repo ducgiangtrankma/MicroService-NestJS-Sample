@@ -1,0 +1,16 @@
+{
+    "greeting": "Xin chào, chào mừng bạn đến với dịch vụ của chúng tôi!",
+    "error": {
+      "validation_error":"Dữ liệu không hợp lệ",
+      "not_found": "Không tìm thấy tài nguyên",
+      "unauthorized": "Bạn không có quyền truy cập",
+      "userNotFound": "Không tìm thấy tài khoản",
+      "phoneHasRegistered":"Số điện thoại đã được đăng kí",
+      "registerError":"Có lỗi xảy ra trong quá trình đăng kí",
+      "accountAlready":"Tài khoản đã tồn tại. Vui lòng đăng nhập",
+      "activeAccountSuccess":"Kích hoạt tài khoản thành công",
+      "activeError":"Kích hoạt tài khoản thất bại",
+      "loginError":"Số điện thoại hoặc mật khẩu chưa đúng"
+    }
+}
+  

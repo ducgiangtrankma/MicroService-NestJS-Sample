@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+*/dist/
+build/
+*/build/
+coverage/
+*/coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.sample
+*/.env
+*/.env.*
+!*/.env.example
+!*/.env.sample
+
+# Logs
+logs/
+*.log
+*/logs/
+*/*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Test coverage
+.nyc_output/
+*/.nyc_output/
+
+# Temporary files
+.tmp/
+.temp/
+*/tmp/
+*/temp/
+
+# Docker
+Dockerfile.dev
+docker-compose.override.yml
+.dockerignore
+
+# Package manager locks (keep one, remove others based on preference)
+# Uncomment the ones you want to ignore
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._* 

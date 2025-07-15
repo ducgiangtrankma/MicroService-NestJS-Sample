@@ -1,0 +1,16 @@
+{
+    "greeting": "Hello, welcome to user service!",
+    "error": {
+      "validation_error":"Validation failed",
+      "not_found": "Resource not found",
+      "unauthorized": "You are not authorized",
+      "userNotFound": "User not found",
+      "requestInvalid":"Request Invalid",
+      "phoneHasRegistered":"Phone number has been registered",
+      "registerError":"Register Error",
+      "accountAlready":"Account already exists. Please login.",
+      "activeAccountSuccess":"Active account success",
+      "activeError":"An error occurred during authentication",
+      "loginError":"Phone number or password not valid"
+    }
+}
